@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+  display: flex;
+  border: 1px solid black;
+  box-shadow: 3px 3px 4px 0;
+  height: 300px;
+  width: 450px;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+div.image {
+  height: 100%;
+  flex: 1;
+}
+
+div.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+div.txt {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+}
